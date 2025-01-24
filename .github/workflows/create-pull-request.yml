@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: YOUR-USERNAME/YOUR-FORKED-REPO
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.HABEGGER_TOKEN }}
 
       - name: Add upstream repository
         run: git remote add upstream https://github.com/ORIGINAL-USERNAME/ORIGINAL-REPO.git
@@ -28,7 +28,7 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.HABEGGER_TOKEN }}
           upstream-repository: ORIGINAL-USERNAME/ORIGINAL-REPO
           branch: main
           title: 'Automated Sync'
