@@ -16,11 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          repository: YOUR-USERNAME/YOUR-FORKED-REPO
+          repository: Habegger-IT/8_382.BKJfios485_.JKDlffi4958
           token: ${{ secrets.HABEGGER_TOKEN }}
 
       - name: Add upstream repository
-        run: git remote add upstream https://github.com/ORIGINAL-USERNAME/ORIGINAL-REPO.git
+        run: git remote add upstream https://github.com/Habegger-IT/8_382.BKJfios485_.JKDlffi4958.git
 
       - name: Fetch upstream changes
         run: git fetch upstream
